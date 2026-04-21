@@ -30,6 +30,25 @@ This project uses **Retrieval-Augmented Generation (RAG)** to fetch relevant con
 ## 📁 Project Structure
 
 
+rag_document_qa/
+│
+├── app.py # Streamlit UI
+├── requirements.txt
+├── .gitignore
+│
+├── src/
+│ ├── pdf_loader.py # Extract text from PDF
+│ ├── text_splitter.py # Split text into chunks
+│ ├── embeddings.py # Create embeddings
+│ ├── vector_store.py # FAISS index + search
+│ ├── llm.py # LLM pipeline (testing)
+│
+├── data/
+│ └── sample.pdf # Sample PDF (optional)
+│
+└── README.md
+
+
 
 ---
 
